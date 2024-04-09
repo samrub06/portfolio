@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Card } from "@/components/ui/card";
-import { MessageCircle, Rss, StickyNote, Store, Weight } from "lucide-react";
+import { BookOpen, MessageCircle, Rss, StickyNote, Store } from "lucide-react";
 import { ContactCard } from "./ContactCard";
 import Section from "./Section";
 import { SideProject, SideProjectProps } from "./SideProject";
@@ -63,6 +63,12 @@ export default Status;
 
 const SIDE_PROJECT: SideProjectProps[] = [
   {
+    Logo: BookOpen,
+    title: "Porfolio",
+    description: "Next.js 14, TailwindCSS, React",
+    url: "https://github.com/samrub06/portfolio",
+  },
+  {
     Logo: Store,
     title: "React Eshop MERN stack & Redux",
     description:
@@ -85,12 +91,6 @@ const SIDE_PROJECT: SideProjectProps[] = [
     Logo: MessageCircle,
     title: "Amazon Service JS service",
     description: "Amazon Service JS service",
-    url: "/",
-  },
-  {
-    Logo: Weight,
-    title: "Codeline",
-    description: "A platform for developers to share their code",
     url: "/",
   },
 ];
